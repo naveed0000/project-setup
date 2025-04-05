@@ -1,7 +1,7 @@
 'use client';
 
 import { ReactNode, useEffect, useMemo, useReducer, useState } from 'react';
-import { Alert, Slide, Snackbar } from '@mui/material';
+import { Alert, Snackbar } from '@mui/material'; // slide use TransitonComponent
 import { AppActionType, AppAlertInterface } from '@/types/appContext';
 import appReducer, { appInitialState } from '@/reducers/snakebarReducer';
 import { AppContext } from './useSnakberContext';
@@ -44,7 +44,7 @@ function SnakberProvider({ children }: SnakberProviderProps) {
         anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
         autoHideDuration={3000}
         onClose={clearAlert}
-        TransitionComponent={Slide}
+        // TransitionComponent={Slide}
         sx={{
           zIndex: 999999,
         }}

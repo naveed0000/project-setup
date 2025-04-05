@@ -4,7 +4,6 @@ import {
   QueryClient,
   QueryClientProvider as TSQueryClientProvider,
 } from '@tanstack/react-query';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { ReactNode, useState } from 'react';
 

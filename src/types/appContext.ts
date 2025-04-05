@@ -12,7 +12,7 @@ export enum AppActionType {
 export interface AppAlertInterface {
   id: string;
   message: string;
-  type: AlertProps['severity'];
+  type: AlertProps['severity']; // study on free time 
 }
 
 /**
